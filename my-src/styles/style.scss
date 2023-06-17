@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroundGradient: radial-gradient(#261d69, #130f35);
+  --blueGradient: linear-gradient(#36329c, #261d69);
+  --headerWidth: 1600px;
+  --textBlue: #261d69;
+  --textPurple: #6b55ae;
+  --purple: #a884ff;
+  --textOrange: #feb02a;
+  --lightPurple: #dccffd;
+  --sectionMargin: 100px;
+  --buttonGradient: linear-gradient(#fdc673, #fb924d);
+  --buttonGradientHover: linear-gradient(#f5b759, #da7634);
+}
+
+@font-face {
+  font-family: 'Kefa';
+  src: url('/static/Kefa.ttc') format('ttc'), url('/static/Kefa.ttc') format('ttc');
+}
+
+body {
+  background: var(--backgroundGradient);
+  color: white;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  font-family: 'Kefa', sans-serif;
+}
+
+img {
+  height: auto;
+}
+
+.separator {
+  background: var(--textOrange);
+  width: 100px;
+  height: 10px;
+  margin: 10px 0;
+}
+
+.sub-text {
+  font-size: 20px;
+  color: var(--textPurple);
+}
+
+.button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: var(--textBlue);
+  background: var(--buttonGradient);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: all 0.3s;
+
+  &--lg {
+    padding: 20px 38px;
+    border-radius: 40px;
+    font-size: 20px;
+  }
+
+  &:hover {
+    background: var(--buttonGradientHover);
+  }
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+h2 {
+  color: var(--textOrange);
+  font-size: 46px;
+
+  @media only screen and (max-width: 1300px) {
+    font-size: 35px;
+  }
+}
+
+@import './header.scss';
+@import './hero.scss';
+@import './intro.scss';
+@import './features.scss';
+@import './awards.scss';
+@import './audio.scss';
+@import './download.scss';
+@import './stars.scss';
+@import './footer.scss';
+@import './feedback.scss';
+@import './video.scss';
+@import './pricing.scss';
+@import 'https://cdn.plyr.io/3.6.3/plyr.css';

@@ -1,0 +1,10 @@
+.video-section {
+  --plyr-video-controls-background: transparent;
+  --plyr-video-control-color: var(--textOrange);
+  --plyr-color-main: var(--textBlue);
+  margin-bottom: var(--sectionMargin);
+
+  .plyr__poster {
+    background-image: url(/static/thumbnail.png) !important;
+  }
+}
