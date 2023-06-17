@@ -1,0 +1,56 @@
+.awards-section {
+  height: 1254px;
+  position: relative;
+  overflow: visible;
+  background: url('/static/purple-blob.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 1300px) {
+    background: none;
+    height: 400px;
+    display: block;
+    margin: 60px 20px;
+  }
+
+  .awards {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 100px;
+    justify-content: center;
+
+    @media only screen and (max-width: 1300px) {
+      gap: 30px;
+
+      img {
+        max-width: 300px;
+      }
+    }
+    @media only screen and (max-width: 850px) {
+      img {
+        max-width: 120px;
+      }
+    }
+  }
+
+  .note {
+    position: absolute;
+    left: 10%;
+    top: 150px;
+    font-size: 45px;
+    max-width: 600px;
+    color: var(--textPurple);
+
+    @media only screen and (max-width: 1300px) {
+      font-size: 35px;
+      left: 20px;
+      position: static;
+      display: block;
+      margin-bottom: 60px;
+    }
+  }
+}
