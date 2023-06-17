@@ -1,0 +1,65 @@
+header {
+  max-width: var(--headerWidth);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 70px;
+
+  .burger {
+    background: none;
+    border: none;
+    color: white;
+
+    svg {
+      display: none;
+      fill: white;
+      color: white;
+      width: 40px;
+
+      @media only screen and (max-width: 800px) {
+        display: block;
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+
+    li {
+      margin-left: 40px;
+      white-space: nowrap;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .logo {
+    width: 170px;
+  }
+
+  .wave,
+  .stars {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url('/static/wave.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: -1;
+  }
+  .stars {
+    background: url('/static/stars.svg');
+  }
+}
